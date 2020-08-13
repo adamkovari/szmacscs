@@ -1,3 +1,60 @@
 $body-bg: white;
 
 @import '~bootstrap/scss/bootstrap.scss';
+
+body{
+
+  nav{
+    position: fixed;
+    top: 0;
+    background-color: #ced4da;
+    opacity: 80%;
+    div{
+
+      li{
+        padding:10px;
+      }
+    }
+  }
+}
+#navbarNav{
+  justify-content: center;
+}
+
+#scout-lily{
+  width:4em;
+}
+
+#facebook-logo{
+  width:2em;
+}
+#instagram-logo{
+  width:2em;
+}
+#nav2{
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+
+  }
+  nav{
+    button{
+      float:right;
+      margin:20px;
+    }
+  }
+
+  #scout-lily{
+    width:4em;
+    overflow:hidden;
+  }
+  #nav1{
+    display: none;
+  }
+  #nav2{
+    display:block;
+
+  }
+}

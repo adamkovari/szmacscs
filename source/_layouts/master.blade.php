@@ -11,39 +11,79 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
     <body>
-        <header class="header-sticky">
-          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav1">
+            <a class="navbar-brand" id="scout-lily" href="https://cserkesz.hu">
+                <img border="0" alt="" src="assets/images/logo-black-vector.svg">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Magunkról</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Kapcsolat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Támogatás</a>
+                    </li>
                 </ul>
-              </div>
-            </nav>
-          </div>
-      </header>
+            </div>
+            <a class="navbar-brand" id="facebook-logo" href="https://cserkesz.hu">
+                <img border="0" alt="" src="assets/images/facebook-logo-vector.svg">
+            </a>
+            <a class="navbar-brand" id="instagram-logo" href="https://cserkesz.hu">
+                <img border="0" alt="" src="assets/images/instagram-logo-vector.svg">
+            </a>
+
+        </nav>
+
+        <nav class="navbar navbar-light light-blue lighten-4" id="nav2">
+
+            <!-- Navbar brand -->
+
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                            class="navbar-toggler-icon"></i></span></button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Magunkról</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kapcsolat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Támogatás</a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <a class="navbar-brand" id="scout-lily" href="https://cserkesz.hu">
+                <img border="0" alt="" src="assets/images/logo-black-vector.svg">
+            </a>
+
+
+        </nav>
+
       @yield('body')
       <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </body>
