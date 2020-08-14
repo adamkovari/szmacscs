@@ -1,13 +1,13 @@
+/.idea/
+/.vscode/
 /build_local/
 /cache/
 /node_modules/
+/source/assets/build/
 /vendor/
-/.idea/
-/.vscode/
 npm-debug.log
 yarn-error.log
 
 # Optional ignores
 # /build_staging/
 # /build_production/
-# /source/assets/build/
