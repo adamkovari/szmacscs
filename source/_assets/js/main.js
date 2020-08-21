@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('#news-icon').css("opacity", 0);
     $(window).scroll(function(){
         if($(window).scrollTop()<300) {
-            $('#news-icon').css("margin-left", 20 + $(window).scrollTop());
+            $('#news-icon').css("margin-left", 150 + $(window).scrollTop()/1.5);
             //$(document).getElementById("news-icon").style.left = 20 + $(window).scrollTop();
             $('#news-icon').css("opacity", 0+ $(window).scrollTop()/320);
         }
