@@ -35,6 +35,12 @@ body{
   }
 }
 
+.nav-item{
+  a:hover{
+    color:#6c757d!important;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   color:#f8f9fa;
 }
@@ -115,6 +121,7 @@ body{
   text-align: center;
   font-size: 1em;
   color:#f8f9fa;
+  position: relative;
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.4);
   z-index: 99;
   img{
@@ -184,6 +191,16 @@ body{
 
 .col-md-3{
   margin: auto 10px;
+}
+
+.list-group-item{
+  a{
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #6c757d;
+  }
 }
 
 @media only screen and (max-width: 992px) {
