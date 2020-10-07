@@ -10019,6 +10019,11 @@ body nav div li a {
   width: 2em;
 }
 
+#szmacscs-logo {
+  width: 150px;
+  height: auto;
+}
+
 #nav1 {
   overflow: hidden;
   position: fixed;
@@ -10065,8 +10070,9 @@ body nav div li a {
 }
 
 .news-container {
-  background: url("/assets/images/scout-lily-bg-bw.svg") repeat;
-  background-size: 1000px;
+  background: url("/assets/images/news-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news-title {
@@ -10091,8 +10097,9 @@ body nav div li a {
 .news-feed {
   width: 60%;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding: 20px 0px 40px;
   background: #f8f9fa;
+  box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.4);
 }
 .news-feed .news {
   width: 80%;
@@ -10112,11 +10119,13 @@ body nav div li a {
 .footer {
   bottom: 0;
   width: 100%;
-  padding-top: 50px;
   position: relative;
   height: auto;
   background-color: #1b1e21;
   box-shadow: -10px 5px 20px 3px rgba(0, 0, 0, 0.4);
+}
+.footer a {
+  text-decoration: none;
 }
 
 .mb-4 {
@@ -10141,6 +10150,34 @@ body nav div li a {
 }
 .list-group-item a:hover {
   color: #6c757d;
+}
+
+.card-body {
+  margin: 20px;
+  box-shadow: 1px 1px 1px 1.3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.card-content h5 {
+  margin: 0 !important;
+}
+.card-content h5 a {
+  color: #1b1e21;
+  text-decoration: none;
+}
+.card-content hr {
+  width: 50%;
+  text-align: left;
+  margin-left: 0;
+}
+.card-content p {
+  width: 50%;
+}
+
+.new-card-image {
+  width: 200px;
+  height: auto;
+  float: right;
 }
 
 @media only screen and (max-width: 992px) {

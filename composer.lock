@@ -1677,12 +1677,12 @@
             "version": "v1.3.29",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tightenco/jigsaw.git",
+                "url": "https://github.com/tighten/jigsaw.git",
                 "reference": "22bb32b0334f6bc2965df0ff558b4a9a30111469"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/22bb32b0334f6bc2965df0ff558b4a9a30111469",
+                "url": "https://api.github.com/repos/tighten/jigsaw/zipball/22bb32b0334f6bc2965df0ff558b4a9a30111469",
                 "reference": "22bb32b0334f6bc2965df0ff558b4a9a30111469",
                 "shasum": ""
             },
