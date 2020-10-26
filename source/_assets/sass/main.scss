@@ -67,16 +67,16 @@ body{
 
 #nav1{
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   top:0;
   width:100%;
   z-index: 999;
 }
 
+
 #nav2{
   display: none;
 }
-
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -85,18 +85,28 @@ body{
   border-color: white;
 }
 
+#myVideo{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin: 20px 0;
+  right: 0;
+  top:0;
+}
+
 .welcome-container{
   margin-top: 5%;
-  background: url('/assets/images/welcome-img.jpg') no-repeat;
-  background-size: cover;
+
   width: 100%;
   height:100%;
   padding:20% 10%;
-
+  top:0;
+  position: relative;
   .welcome-text{
     padding: 3% 16%;
     background: #1b1e21;
     opacity: 80%;
+    visibility: hidden;
       img{
         width:40px;
         height:auto;
@@ -118,14 +128,30 @@ body{
   //scout lily sheamless background
   //background: url('/assets/images/scout-lily-bg-bw.svg') repeat;
   //background-size: 1000px;
-  background: url('/assets/images/news-bg.jpg');
-  background-repeat:no-repeat;
+  #background: url('/assets/images/news-bg.jpg');
+  #background-repeat:no-repeat;
+  background: #f8f9fa;
   background-size:cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+
+}
+#calendar{
+  width:35%;
+  padding:20px;
+  margin: 60px 0px 20px;
+  max-height: 600px;
+  box-shadow: 0px 10px 25px 0.1px rgba(0, 0, 0, 0.4);
+  a{
+    color: #356a41;
+  }
 
 }
 
 .news-title{
-  padding:3%;
+  padding:30px;
   margin:0;
   background: #1b1e21;
   text-align: center;
@@ -148,10 +174,10 @@ body{
 
 .news-feed{
   width:60%;
-  margin:0 auto;
-  padding:20px 0px 40px;
+  margin:20px 0px 20px;
+  padding:20px;
   background: #f8f9fa;
-  box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.4);
+  #box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.4);
   .news{
     width:80%;
     padding: 40px 0;
@@ -179,6 +205,7 @@ body{
   bottom: 0;
   width: 100%;
   position: relative;
+
   height: auto;
   background-color: #1b1e21;
   box-shadow: -10px 5px 20px 3px rgba(0, 0, 0, 0.4);
@@ -217,9 +244,10 @@ body{
 
 .card-body{
   margin:20px;
-  box-shadow: 1px 1px 1px 1.3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 25px 0.1px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
 }
 
 .card-content{
@@ -227,6 +255,7 @@ body{
     margin:0 !important;
     a{
       color:#1b1e21;
+
       text-decoration: none;
     }
   }
@@ -252,6 +281,483 @@ body{
   float:right;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300);
+
+.new-page-div{
+  background: #f8f9fa;
+  margin-top: 5%;
+  padding:50px;
+  text-align: center;
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+
+
+  h1{
+    padding-top:1.5em;
+  }
+  hr{
+    padding-bottom: 1.5em;
+  }
+  img{
+    width:70%;
+    heihgt:auto;
+  }
+}
+
+.about-page{
+  background: #f8f9fa;
+  padding:5%;
+  text-align: justify;
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+  h1{
+    text-align: left;
+    padding-top: 1.5em;
+  }
+  p{
+    padding: 1.5em;
+
+  }
+}
+
+.about-page-leaders{
+  background: #f8f9fa;
+  width: 100%;
+  padding:5%;
+  color: #444;
+
+  font-family: 'Merriweather', Georgia, serif;
+  h1{
+    margin-top:25px;
+  }
+}
+
+.leader-card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10% 15%;
+  h4{
+
+  }
+  h6{
+
+  }
+  p{
+    text-align: justify;
+  }
+
+}
+
+.leader-img{
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 50px;
+  box-shadow: 0px 20px 20px 0.1px rgba(0,0,0,0.2);
+}
+
+#cronolog{
+  width:100%;
+  background: #f8f9fa;
+  color: #444;
+  padding:5%;
+  font-family: 'Merriweather', Georgia, serif;
+
+
+  .about-cronolog-map{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+      .ifr{
+
+        .juHnxJ{
+          position: absolute;
+          display: inline-block;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 450px;
+        }
+      }
+
+  }
+  h1{
+    text-align: left;
+    padding-top: 1.5em;
+  }
+
+}
+
+
+
+
+
+
+.join-page-bg{
+  background: url("../../images/hanna.JPG") no-repeat 200px 0;
+  background-size: cover ;
+  width:100%;
+}
+
+
+.join-page{
+
+  background: #f8f9fa;
+  width: 60%;
+  margin-top: 5%;
+  padding:5%;
+  text-align: justify;
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+  box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.4);
+
+  ul{
+    list-style-type: none;
+  }
+
+}
+
+.contact-page {
+  margin-top: 5rem;
+  width: 100%;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+
+  .contact-page-info {
+    background: #f8f9fa;
+
+    width: 40%;
+    padding: 50px 0px;
+    text-align: justify;
+    color: #444;
+    font-family: 'Merriweather', Georgia, serif;
+
+    hr {
+      padding-bottom: 5%;
+    }
+
+    .leader-info {
+      padding: 20px;
+    }
+  }
+
+  iframe {
+    margin-top:50px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.contact-page-bg{
+  width:100%;
+  height:300px;
+  background: url("/assets/images/templom.png") no-repeat 0 0;
+  background-size: cover;
+}
+.contact-page-foundation{
+  width: 100%;
+  background: #f8f9fa;
+  padding:5%;
+  display: flex;
+  justify-content: center;
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+
+}
+#eponym{
+  background: #f8f9fa;
+  padding:5%;
+  width: 100%;
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+  h1{
+    margin-top: 25px;
+  }
+  .eponym-wrapper
+  {
+    display: flex;
+    justify-content: center;
+    .eponym-info{
+      width: 40%;
+      text-align: center;
+
+
+      align-items: center;
+      p{
+        padding:20px;
+      }
+      img{
+        width:60%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+/* STARTS */
+.gallery-page{
+  margin-top:5%;
+  background: #f8f9fa;
+  $primary: #008000 ;
+  $dark-primary: #008000;
+  $light-primary: #bada55;
+  $text: #FFFFFF;
+  $primary-text: #212121;
+  $secondary-text: #757575;
+  $accent: #356a41;
+
+  section {
+    padding: 100px 0;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #eee;
+  }
+
+  h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  header {
+    background: $primary;
+    color: $text;
+    padding: 150px 0;
+
+    p {
+      font-family: 'Allura';
+      color: rgba(255, 255, 255, .2);
+      margin-bottom: 0;
+      font-size: 60px;
+      margin-top: -30px;
+
+    }
+  }
+
+  .timeline {
+
+    position: relative;
+
+    &::before {
+      content: '';
+      background: $light-primary;
+      width: 5px;
+      height: 95%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 70px;
+
+    &:nth-child(even) {
+
+      .timeline-content {
+        float: right;
+        padding: 40px 30px 10px 30px;
+
+        .date {
+          right: auto;
+          left: 0;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          border-style: solid;
+          width: 0;
+          height: 0;
+          top: 30px;
+          left: -15px;
+          border-width: 10px 15px 10px 0;
+          border-color: transparent #f5f5f5 transparent transparent;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 20px 25px 1px rgba(0, 0, 0, .3);
+
+    &::after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      width: 0;
+      height: 0;
+      top: 30px;
+      right: -15px;
+      border-width: 10px 0 10px 15px;
+      border-color: transparent transparent transparent #f5f5f5;
+    }
+  }
+
+  .timeline-img {
+    width: 30px;
+    height: 30px;
+    background: $primary;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -15px;
+  }
+
+  a {
+    background: $primary;
+    color: $text;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+
+    &:hover, &:active, &:focus {
+      background: darken($primary, 10%);
+      color: $text;
+      text-decoration: none;
+    }
+
+  }
+
+  .timeline-card {
+    padding: 0!important;
+
+    p {
+      padding: 0 20px;
+    }
+
+    a {
+      margin-left: 20px;
+    }
+  }
+
+  .timeline-item {
+    .timeline-img-header {
+
+    }
+  }
+
+  .timeline-img-header {
+
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+
+    h2 {
+      color: $text;
+      position: absolute;
+      bottom: 5px;
+      left: 20px;
+    }
+  }
+
+  blockquote {
+    margin-top: 30px;
+    color: $secondary-text;
+    border-left-color: $primary;
+    padding: 0 20px;
+  }
+
+  .date {
+    background: $accent;
+    display: inline-block;
+    color: $text;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .timeline {
+
+      &::before {
+        left: 50px;
+      }
+
+      .timeline-img {
+        left: 50px;
+      }
+
+      .timeline-content {
+        max-width: 100%;
+        width: auto;
+        margin-left: 70px;
+      }
+
+      .timeline-item {
+
+        &:nth-child(even) {
+
+          .timeline-content {
+            float: none;
+
+          }
+        }
+
+        &:nth-child(odd) {
+
+          .timeline-content {
+
+            &::after {
+              content: '';
+              position: absolute;
+              border-style: solid;
+              width: 0;
+              height: 0;
+              top: 30px;
+              left: -15px;
+              border-width: 10px 15px 10px 0;
+              border-color: transparent #f5f5f5 transparent transparent;
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+
+}
+/* ENDS */
+
 @media only screen and (max-width: 992px) {
   body {
 
@@ -264,15 +770,29 @@ body{
   }
 
   .welcome-container{
-    margin-top: 15%;
-
+    margin-top: 10%;
+    background: url('/assets/images/welcome-img.jpg') no-repeat;
+    background-size: cover;
     .welcome-text{
       padding: 3% 4%;
-
+      visibility: visible;
       h1{
         font-size: 1em;
       }
     }
+  }
+  .news-container{
+    display: inline-block;
+
+  }
+  #calendar{
+    width:90%;
+    margin: 20px auto;
+    a{
+      color:#356a41;
+    }
+
+
   }
 
   .news-feed{
@@ -309,7 +829,72 @@ body{
     width:100%;
     z-index: 999;
   }
+  #myVideo{
+    display: none;
+  }
 
+  .join-page-bg{
+    width:100%;
+    background: #f8f9fa;
+  }
+  .join-page{
+    width:100%;
+
+  }
+  .leader-card-body{
+    display: inline-block;
+    .leader-img{
+      margin-right: 0;
+      margin-bottom:25px;
+    }
+  }
+  .contact-page{
+    text-align: center;
+    display:inline-block;
+    .contact-page-info{
+      width: 100%;
+      padding:25px;
+    }
+  }
+
+  #eponym{
+    .eponym-wrapper
+    {
+      .eponym-info{
+        width: 100%;
+        img{
+          width:80%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .card-body{
+    margin:20px;
+    box-shadow: 0px 10px 25px 0.1px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    color: #444;
+    font-family: 'Merriweather', Georgia, serif;
+  }
+
+  .card-content{
+    display: block;
+    text-align: center;
+
+    hr{
+      width:100%;
+    }
+    p{
+      width:100%;
+    }
+
+    .new-card-image{
+      width:100%;
+      height:auto;
+      display: none;
+    }
+  }
 
 
 }

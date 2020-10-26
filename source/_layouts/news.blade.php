@@ -13,8 +13,12 @@
 <body>
 
 @include('_includes.header')
+<div class="new-page-div">
+    @yield('content')
 
-@yield('content')
+</div>
+
+
 
 @include('_includes.footer')
 

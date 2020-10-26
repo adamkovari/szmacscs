@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300);@charset "UTF-8";
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -1990,6 +1990,10 @@ pre code {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.form-control::-webkit-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
@@ -10026,7 +10030,7 @@ body nav div li a {
 
 #nav1 {
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -10044,18 +10048,28 @@ body nav div li a {
   border-color: white;
 }
 
+#myVideo {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin: 20px 0;
+  right: 0;
+  top: 0;
+}
+
 .welcome-container {
   margin-top: 5%;
-  background: url("/assets/images/welcome-img.jpg") no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
   padding: 20% 10%;
+  top: 0;
+  position: relative;
 }
 .welcome-container .welcome-text {
   padding: 3% 16%;
   background: #1b1e21;
   opacity: 80%;
+  visibility: hidden;
 }
 .welcome-container .welcome-text img {
   width: 40px;
@@ -10070,13 +10084,28 @@ body nav div li a {
 }
 
 .news-container {
-  background: url("/assets/images/news-bg.jpg");
-  background-repeat: no-repeat;
+  #background: url("/assets/images/news-bg.jpg");
+  #background-repeat: no-repeat;
+  background: #f8f9fa;
   background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#calendar {
+  width: 35%;
+  padding: 20px;
+  margin: 60px 0px 20px;
+  max-height: 600px;
+  box-shadow: 0px 10px 25px 0.1px rgba(0, 0, 0, 0.4);
+}
+#calendar a {
+  color: #356a41;
 }
 
 .news-title {
-  padding: 3%;
+  padding: 30px;
   margin: 0;
   background: #1b1e21;
   text-align: center;
@@ -10096,10 +10125,10 @@ body nav div li a {
 
 .news-feed {
   width: 60%;
-  margin: 0 auto;
-  padding: 20px 0px 40px;
+  margin: 20px 0px 20px;
+  padding: 20px;
   background: #f8f9fa;
-  box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.4);
+  #box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.4);
 }
 .news-feed .news {
   width: 80%;
@@ -10154,8 +10183,10 @@ body nav div li a {
 
 .card-body {
   margin: 20px;
-  box-shadow: 1px 1px 1px 1.3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 25px 0.1px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
 }
 
 .card-content h5 {
@@ -10180,6 +10211,374 @@ body nav div li a {
   float: right;
 }
 
+.new-page-div {
+  background: #f8f9fa;
+  margin-top: 5%;
+  padding: 50px;
+  text-align: center;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
+}
+.new-page-div h1 {
+  padding-top: 1.5em;
+}
+.new-page-div hr {
+  padding-bottom: 1.5em;
+}
+.new-page-div img {
+  width: 70%;
+  heihgt: auto;
+}
+
+.about-page {
+  background: #f8f9fa;
+  padding: 5%;
+  text-align: justify;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
+}
+.about-page h1 {
+  text-align: left;
+  padding-top: 1.5em;
+}
+.about-page p {
+  padding: 1.5em;
+}
+
+.about-page-leaders {
+  background: #f8f9fa;
+  width: 100%;
+  padding: 5%;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
+}
+.about-page-leaders h1 {
+  margin-top: 25px;
+}
+
+.leader-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10% 15%;
+}
+.leader-card-body p {
+  text-align: justify;
+}
+
+.leader-img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 50px;
+  box-shadow: 0px 20px 20px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+#cronolog {
+  width: 100%;
+  background: #f8f9fa;
+  color: #444;
+  padding: 5%;
+  font-family: "Merriweather", Georgia, serif;
+}
+#cronolog .about-cronolog-map {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+#cronolog .about-cronolog-map .ifr .juHnxJ {
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 450px;
+}
+#cronolog h1 {
+  text-align: left;
+  padding-top: 1.5em;
+}
+
+.join-page-bg {
+  background: url("../../images/hanna.JPG") no-repeat 200px 0;
+  background-size: cover;
+  width: 100%;
+}
+
+.join-page {
+  background: #f8f9fa;
+  width: 60%;
+  margin-top: 5%;
+  padding: 5%;
+  text-align: justify;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
+  box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.4);
+}
+.join-page ul {
+  list-style-type: none;
+}
+
+.contact-page {
+  margin-top: 5rem;
+  width: 100%;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+}
+.contact-page .contact-page-info {
+  background: #f8f9fa;
+  width: 40%;
+  padding: 50px 0px;
+  text-align: justify;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
+}
+.contact-page .contact-page-info hr {
+  padding-bottom: 5%;
+}
+.contact-page .contact-page-info .leader-info {
+  padding: 20px;
+}
+.contact-page iframe {
+  margin-top: 50px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.3);
+}
+
+.contact-page-bg {
+  width: 100%;
+  height: 300px;
+  background: url("/assets/images/templom.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.contact-page-foundation {
+  width: 100%;
+  background: #f8f9fa;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
+}
+
+#eponym {
+  background: #f8f9fa;
+  padding: 5%;
+  width: 100%;
+  color: #444;
+  font-family: "Merriweather", Georgia, serif;
+}
+#eponym h1 {
+  margin-top: 25px;
+}
+#eponym .eponym-wrapper {
+  display: flex;
+  justify-content: center;
+}
+#eponym .eponym-wrapper .eponym-info {
+  width: 40%;
+  text-align: center;
+  align-items: center;
+}
+#eponym .eponym-wrapper .eponym-info p {
+  padding: 20px;
+}
+#eponym .eponym-wrapper .eponym-info img {
+  width: 60%;
+  height: auto;
+}
+
+/* STARTS */
+.gallery-page {
+  margin-top: 5%;
+  background: #f8f9fa;
+}
+.gallery-page section {
+  padding: 100px 0;
+}
+.gallery-page html, .gallery-page body {
+  overflow-x: hidden;
+}
+.gallery-page body {
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400;
+  background-color: #eee;
+}
+.gallery-page h1 {
+  font-size: 200%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.gallery-page header {
+  background: #008000;
+  color: #FFFFFF;
+  padding: 150px 0;
+}
+.gallery-page header p {
+  font-family: "Allura";
+  color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 0;
+  font-size: 60px;
+  margin-top: -30px;
+}
+.gallery-page .timeline {
+  position: relative;
+}
+.gallery-page .timeline::before {
+  content: "";
+  background: #bada55;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gallery-page .timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.gallery-page .timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.gallery-page .timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.gallery-page .timeline-item:nth-child(even) .timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+.gallery-page .timeline-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery-page .timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px 1px rgba(0, 0, 0, 0.3);
+}
+.gallery-page .timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+.gallery-page .timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #008000;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+.gallery-page a {
+  background: #008000;
+  color: #FFFFFF;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+}
+.gallery-page a:hover, .gallery-page a:active, .gallery-page a:focus {
+  background: #004d00;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.gallery-page .timeline-card {
+  padding: 0 !important;
+}
+.gallery-page .timeline-card p {
+  padding: 0 20px;
+}
+.gallery-page .timeline-card a {
+  margin-left: 20px;
+}
+.gallery-page .timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.gallery-page .timeline-img-header h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+.gallery-page blockquote {
+  margin-top: 30px;
+  color: #757575;
+  border-left-color: #008000;
+  padding: 0 20px;
+}
+.gallery-page .date {
+  background: #356a41;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .gallery-page .timeline::before {
+    left: 50px;
+  }
+  .gallery-page .timeline .timeline-img {
+    left: 50px;
+  }
+  .gallery-page .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .gallery-page .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .gallery-page .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
+
+/* ENDS */
 @media only screen and (max-width: 992px) {
   nav button {
     float: right;
@@ -10187,13 +10586,28 @@ body nav div li a {
   }
 
   .welcome-container {
-    margin-top: 15%;
+    margin-top: 10%;
+    background: url("/assets/images/welcome-img.jpg") no-repeat;
+    background-size: cover;
   }
   .welcome-container .welcome-text {
     padding: 3% 4%;
+    visibility: visible;
   }
   .welcome-container .welcome-text h1 {
     font-size: 1em;
+  }
+
+  .news-container {
+    display: inline-block;
+  }
+
+  #calendar {
+    width: 90%;
+    margin: 20px auto;
+  }
+  #calendar a {
+    color: #356a41;
   }
 
   .news-feed {
@@ -10222,5 +10636,67 @@ body nav div li a {
     top: 0;
     width: 100%;
     z-index: 999;
+  }
+
+  #myVideo {
+    display: none;
+  }
+
+  .join-page-bg {
+    width: 100%;
+    background: #f8f9fa;
+  }
+
+  .join-page {
+    width: 100%;
+  }
+
+  .leader-card-body {
+    display: inline-block;
+  }
+  .leader-card-body .leader-img {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .contact-page {
+    text-align: center;
+    display: inline-block;
+  }
+  .contact-page .contact-page-info {
+    width: 100%;
+    padding: 25px;
+  }
+
+  #eponym .eponym-wrapper .eponym-info {
+    width: 100%;
+  }
+  #eponym .eponym-wrapper .eponym-info img {
+    width: 80%;
+    height: auto;
+  }
+
+  .card-body {
+    margin: 20px;
+    box-shadow: 0px 10px 25px 0.1px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    color: #444;
+    font-family: "Merriweather", Georgia, serif;
+  }
+
+  .card-content {
+    display: block;
+    text-align: center;
+  }
+  .card-content hr {
+    width: 100%;
+  }
+  .card-content p {
+    width: 100%;
+  }
+  .card-content .new-card-image {
+    width: 100%;
+    height: auto;
+    display: none;
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html lang="{{ $page->language ?? 'hu' }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,6 +9,8 @@
         <meta name="description" content="{{ $page->description }}">
         <title>SZMACSCS | 426</title>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+
     </head>
     <body>
         @include('_includes.header')
@@ -16,6 +18,5 @@
         @yield('body')
 
         @include('_includes.footer')
-      <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </body>
 </html>

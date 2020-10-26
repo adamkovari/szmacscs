@@ -2,6 +2,6 @@
 
 @section('body')
 
-
+    <div id='calendar'></div>
 
 @endsection

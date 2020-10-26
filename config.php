@@ -11,6 +11,8 @@ return [
         return Str::contains($page->getPath(), $section) ? 'selected' : '';
     },
     'collections' => [
-        'news'
+        'news',
+        'leaders',
+        'albums'
     ],
 ];
